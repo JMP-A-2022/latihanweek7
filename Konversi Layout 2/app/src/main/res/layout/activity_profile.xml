@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <TextView
+        android:id="@+id/welcome_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="General Info"
+        android:textColor="#313131"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_profile"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_back" />
+
+    <TextView
+        android:id="@+id/txt_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#9c9c9c"
+        android:textAllCaps="false"
+        android:layout_marginRight="250dp"
+        android:textSize="20dp"
+        android:text="About Me"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/img_profile"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:fontFamily="@font/montserrat_bold"
+        />
+
+    <TextView
+        android:id="@+id/txt_descabout"
+        android:layout_width="356dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="I think this is one of the most important qualities to have as a driver: show responsibility for other traffic participants"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_about" />
+
+    <View class="android.widget.LinearLayout" android:layout_height="0.5dp" android:layout_width="350dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/txt_descabout"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/black"
+        android:id="@+id/vw_about" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#9c9c9c"
+        android:layout_marginRight="250dp"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:text="Full Name"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/vw_about"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:fontFamily="@font/montserrat_bold"
+        />
+
+    <TextView
+        android:id="@+id/txt_descname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Jonathan Doe"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginLeft="125dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_name"
+        app:layout_constraintTop_toBottomOf="@+id/vw_about" />
+
+    <View class="android.widget.LinearLayout" android:layout_height="0.5dp" android:layout_width="350dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/black"
+        android:id="@+id/vw_name" />
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#9c9c9c"
+        android:layout_marginRight="292dp"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:text="Email"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/vw_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:fontFamily="@font/montserrat_bold"
+        />
+
+    <TextView
+        android:id="@+id/txt_descemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="jonathan@gmail.com"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_email"
+        app:layout_constraintTop_toBottomOf="@+id/vw_name" />
+
+    <View class="android.widget.LinearLayout" android:layout_height="0.5dp" android:layout_width="350dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/txt_email"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/black"
+        android:id="@+id/vw_email" />
+
+    <TextView
+        android:id="@+id/txt_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#9c9c9c"
+        android:layout_marginRight="280dp"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:text="Gender"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/vw_email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:fontFamily="@font/montserrat_bold"
+        />
+
+    <TextView
+        android:id="@+id/txt_descgender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Male"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_email"
+        app:layout_constraintTop_toBottomOf="@+id/vw_email" />
+
+    <View class="android.widget.LinearLayout" android:layout_height="0.5dp" android:layout_width="350dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/txt_gender"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/black"
+        android:id="@+id/vw_gender" />
+
+    <TextView
+        android:id="@+id/txt_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#9c9c9c"
+        android:layout_marginRight="250dp"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:text="Phone No."
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/vw_gender"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:fontFamily="@font/montserrat_bold"
+        />
+
+    <TextView
+        android:id="@+id/txt_descphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="+123423423432"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_email"
+        app:layout_constraintTop_toBottomOf="@+id/vw_gender" />
+
+    <View class="android.widget.LinearLayout" android:layout_height="0.5dp" android:layout_width="350dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/txt_phone"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/black"
+        android:id="@+id/vw_phone" />
+
+    <TextView
+        android:id="@+id/txt_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#9c9c9c"
+        android:layout_marginRight="310dp"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:text="City"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/vw_phone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:fontFamily="@font/montserrat_bold"
+        />
+
+    <TextView
+        android:id="@+id/txt_desccity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Ottawa"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_email"
+        app:layout_constraintTop_toBottomOf="@+id/vw_phone" />
+
+    <View class="android.widget.LinearLayout" android:layout_height="0.5dp" android:layout_width="350dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/txt_city"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/black"
+        android:id="@+id/vw_city" />
+
+    <TextView
+        android:id="@+id/txt_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#9c9c9c"
+        android:layout_marginRight="270dp"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:text="Address"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/vw_city"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:fontFamily="@font/montserrat_bold"
+        />
+
+    <TextView
+        android:id="@+id/txt_descaddress"
+        android:layout_width="202dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="296 Elgin St, Ottawa, ON x 1M3, Canada"
+        android:textColor="@color/black"
+        android:gravity="right"
+        android:textSize="18dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_email"
+        app:layout_constraintTop_toBottomOf="@+id/vw_city" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
