@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background_satu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/red_rectangle"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="390dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Continuing as
+        Service Provider"
+        android:textColor="#313131"
+        android:textSize="42sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_btn_login"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/btn_white_small"
+        android:text="Login"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:textColor="#CD4C4C"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/btn_red_large"
+        android:text="Register"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_btn_login" />
+
+    <Button
+        android:id="@+id/btn_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:textSize="18sp"
+        android:background="@drawable/btn_white_small"
+        android:text="Continue with Google"
+        android:drawableLeft="@drawable/google_logo"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:textColor="#CD4C4C"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="560dp"
+        />
+
+    <Button
+        android:id="@+id/btn_fb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:textSize="18sp"
+        android:background="@drawable/btn_blue_large"
+        android:text="Continue with Facebook"
+        android:drawableLeft="@drawable/fb_logo"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:textColor="#3b5998"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="620dp"
+        />
+
+    <TextView
+        android:id="@+id/enter_as_a_guest2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Enter as a guest"
+        android:textColor="#9b9b9b"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="680dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
