@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_welcome_slide">
+
+    <ImageView
+        android:id="@+id/calendar"
+        android:layout_width="248dp"
+        android:layout_height="308dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_eventlist"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#313131"
+        android:text="Welcome To DTS VSGA"
+        app:layout_constraintTop_toBottomOf="@id/calendar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:fontFamily="@font/futura_pt_demibold"
+        />
+
+    <TextView
+        android:id="@+id/sub_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#313131"
+        android:text="What is going to happen tomorrow ?"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:fontFamily="@font/futura_pt_demibold"
+        />
+
+    <ImageView
+        android:id="@+id/background_satu"
+        android:layout_width="409dp"
+        android:layout_height="239dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/login_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="72dp"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="18sp"
+        android:fontFamily="@font/futura_pt_demibold"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
